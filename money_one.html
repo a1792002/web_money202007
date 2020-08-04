@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>速交貸</title>
+  <link rel="shortcut icon" href="img/web/favicon.ico" type="image/x-icon">
+  <!--自動更新IE瀏覽器-->
+  <meta http-equiv="X-UA-compatible" content="IE-Edge">
+  <!-- 描寫設定 -->
+  <meta name="keywords" content="借貸平台借錢管道">
+  <meta name="description" content="借貸平台借錢管道">
+  <!-- facebook -->
+  <meta property="og:title" content="速交貸">
+  <meta property="og:site_name" content="速交貸">
+  <meta property="og:description" content="借貸平台借錢管道，合法安全有保障">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="facebook.com">
+  <meta property="og:image" content="img/web/logo.svg">
+  <!-- 樣式 -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/myjquery.js"></script>
+</head>
+
+<body>
+
+  <!-- 頁面頭部設定 -->
+  <header class="header">
+
+    <!-- 股市列 -->
+    <div class="stock_bar">
+      <ul>
+        <li class="stock_item">
+          <span class="stock_name">美元</span>
+          <span class="stock_price arrow_down">0.033</span>
+        </li>
+        <li class="stock_item">
+          <span class="stock_name">美債10Yr</span>
+          <span class="stock_price arrow_down">0.024</span>
+        </li>
+        <li class="stock_item">
+          <span class="stock_name">歐元</span>
+          <span class="stock_price arrow_up">0.012</span>
+        </li>
+        <li class="stock_item">
+          <span class="stock_name">道瓊</span>
+          <span class="stock_price arrow_up">0.62</span>
+        </li>
+        <li class="stock_item">
+          <span class="stock_name">日經 22454.46</span>
+          <span class="stock_price arrow_down">0.042</span>
+        </li>
+      </ul>
+    </div>
+    <!-- 置頂 LOGO + 主選單 -->
+    <div class="top">
+      <h1><a href="index.html" class="logo">速交貸</a></h1>
+      <!-- 手機 > 左邊選單按鈕 -->
+      <div class="m_menu_left">
+        <button class="left_menu_btn"><i class="fas fa-bars"></i></button>
+        <ul class="left_menu_list hide">
+          <li><a href="show_ad.html">廣告刊登</a></li>
+          <li><a href="note.html">注意事項</a></li>
+          <li><a href="about.html">本站介紹</a></li>
+          <li><a href="service.html">客服資訊</a></li>
+          <li><a href="money_news.html">借錢常識</a></li>
+          <li><a href="video_fun.html">趣味影音</a></li>
+          <li><a href="today_news.html">新聞導覽</a></li>
+          <li><a href="ad_all.html">借貸管道</a></li>
+        </ul>
+      </div>
+      <!-- 手機 > 右邊選單按鈕 -->
+      <div class="m_menu_right">
+        <button class="right_menu_btn"><i class="fas fa-th-large"></i></button>
+        <ul class="right_menu_list hide">
+          <li><a href="ad_all.html">北北基</a></li>
+          <li><a href="ad_all.html">桃竹苗</a></li>
+          <li><a href="ad_all.html">中彰投</a></li>
+          <li><a href="ad_all.html">雲嘉南</a></li>
+          <li><a href="ad_all.html">高屏</a></li>
+          <li><a href="ad_all.html">宜花東</a></li>
+          <li><a href="ad_all.html">離島</a></li>
+        </ul>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="video_fun.html" class="direction">借錢常識</a></li>
+          <li class="drop_btn">
+            <a href="#">功能選單<i class="fas fa-caret-down"></i></a>
+            <ul class="drop_list">
+              <li><a href="show_ad.html">廣告刊登</a></li>
+              <li><a href="note.html">注意事項</a></li>
+              <li><a href="about.html">本站介紹</a></li>
+              <li><a href="service.html">客服資訊</a></li>
+              <li><a href="money_news.html">借錢常識</a></li>
+              <li><a href="video_fun.html">趣味影音</a></li>
+              <li><a href="today_news.html">新聞導覽</a></li>
+              <li><a href="ad_all.html">借貸管道</a></li>
+            </ul>
+          </li>
+          <li><a href="ad_all.html">北北基</a></li>
+          <li><a href="ad_all.html">桃竹苗</a></li>
+          <li><a href="ad_all.html">中彰投</a></li>
+          <li><a href="ad_all.html">雲嘉南</a></li>
+          <li><a href="ad_all.html">高屏</a></li>
+          <li><a href="ad_all.html">宜花東</a></li>
+          <li><a href="ad_all.html">離島</a></li>
+          <li><a href="index.html">首頁</a></li>
+        </ul>
+        <form class="search_box">
+          <input type="search" class="search_txt">
+          <button class="search_btn"><i class="fas fa-search"></i></button>
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 頁面中部內容設定 -->
+  <div class="content theme_content">
+
+    <div class="group_items">
+      <!-- 主要欄位 > 借錢常識 -->
+      <div class="item_main money_news">
+        <!-- 主題資訊 -->
+        <div class="article main">
+          <ul class="breadcrumbs">
+            <li><a href="money_news.html">借錢常識</a></li>
+            <li><a href="#">財經投資</a></li>
+          </ul>
+          <h3>小心！辦信用卡要注意的 6 大事項，你都有考慮到嗎？</h3>
+          <div class="note_txt">
+            <span class="date">2020-07-22</span>
+            <a href="#" class="author">張真卿</a>
+            <div class="share_num"><i class="fab fa-facebook-f"></i><span> 分享 422</span></div>
+            <a href="#" class="s_facebook"></a>
+            <a href="#" class="s_line"></a>
+            <a href="#" class="s_ig"></a>
+          </div>
+          <img src="img/freelancer/3.jpg" alt="借貸文章">
+          <div class="txt_box">
+            <p>各銀行可藉由信用卡的契約內容來增加收入，民眾在申請信用卡時，要詳細問清楚每一條條文，以免吃虧。</p>
+            <h4>1. 年利率</h4>
+            <p>年利率是計算信用成本的單位，以年利率表示，也有的信用卡以月利率或日利率表示。發卡銀行用它來計算你每個月帳單未清償餘額所應負擔的利息費用。</p>
+            <h4>2. 最低應繳金額</h4>
+            <p>是指你每個月應繳付發卡銀行的最低金額，以維持良好的信用紀錄。最低應繳金額通常是新台幣 1000 元或是未清償餘額的 5%（以較高者計）。但是若你每個月只付最低應繳金額，則相對地將負擔利息費用。</p>
+            <p>例如，若未清償餘額是新台幣二萬元，除了要付每個月的最低付款額（新台幣 1000 元計），還要付利息（若以 20% 計算），則你大約需要兩年的時間才能付清款項，單單利息就支付將近新台幣 4000 元。也就是說，當初你以新台幣兩萬元刷卡借款，結果總償還的金額是新台幣兩萬 4000 元。</p>
+            <h4>3. 寬限期</h4>
+            <p>係指借款當日至對該借款開始計息之期間。若你的信用卡有一個標準寬限期，那麼只要付清當月餘額，就可以免付利息。若你有上個月的餘額未付清，則以後的每一筆都不會有寬限期。若沒有寬限期，則從刷卡借款當日或轉入帳戶後，開始計息。各發卡銀行對寬限期之計算有不同規定。</p>
+            <h4>4. 年費</h4>
+            <p>很多發卡銀行／公司都對信用卡使用人收取年費，有些則不收年費。應該根據自己的需要及付款能力，決定是否需要申請信用卡，避免因為不收年費而申請過多的信用卡。</p>
+            <h4>5. 違約金</h4>
+            <p>若逾期未繳款，各發卡銀行／公司都會對持卡人加收違約金，直到欠款付清為止。各發卡銀行／公司對違約金之計算有不同規定，應避免逾期繳款，而使欠款加速累積。</p>
+            <h4>6. 手續費和其他收費</h4>
+            <p>若利用現金卡預借現金、未準時付款，或超過信用額度時，有些發卡銀行會收取費用。有時發卡銀行可能提供額外福利，有些會酌收費用，例如：購買保險、消費回饋、折扣、積分計畫及特價商品。</p>
+          </div>
+          <div class="support">
+            <p>文章有幫助到您嗎? <br> 邀請您贊助零用金支持專家分享的動力。</p>
+            <div class="btn_pink">
+              <a href="#">本周<span>13</span>人贊助，累積贊助金額<span>$3001</span></a>
+            </div>
+          </div>
+          <div class="keywords">關鍵字：<a href="#">利息費用</a><a href="#">信用卡</a><a href="#">銀行</a></div>
+        </div>
+        <!-- 本週最多人贊助的文章 文章:限 4 則-->
+        <div class="else money_news">
+          <h2 class="item_title">本週最多人贊助的文章...</h2>
+          <div class="article">
+            <div class="btn_pink">
+              <a href="#">本周<span>13</span>人贊助，累積贊助金額<span>$3001</span></a>
+            </div>
+            <h3><a href="money_one.html">還在把錢放定存？別傻了，存股才是王道！他公布獨家選股秘訣，52歲不工作也能年領200萬。</a></h3>
+            <div class="note_txt">
+              <span class="date">2020-06-28</span>
+              <a href="#" class="author">陳小名</a>
+            </div>
+          </div>
+          <div class="article">
+            <div class="btn_pink">
+              <a href="money_one.html">本周<span>13</span>人贊助，累積贊助金額<span>$3001</span></a>
+            </div>
+            <h3><a href="#">顧客不買單，9成不是真心的！2種提問，幫你破解銷售卡住的關鍵。</a></h3>
+            <div class="note_txt">
+              <span class="date">2020-06-28</span>
+              <a href="#" class="author">陳啟昌</a>
+            </div>
+          </div>
+          <div class="article">
+            <div class="btn_pink">
+              <a href="#">本周<span>13</span>人贊助，累積贊助金額<span>$3001</span></a>
+            </div>
+            <h3><a href="money_one.html">鍋貼、水餃賣到衝上市！八方雲集憑什麼？4 組關鍵字解密。</a></h3>
+            <div class="note_txt">
+              <span class="date">2020-07-29</span>
+              <a href="#" class="author">吳元熙</a>
+            </div>
+          </div>
+          <div class="article">
+            <div class="btn_pink">
+              <a href="#">本周<span>13</span>人贊助，累積贊助金額<span>$3001</span></a>
+            </div>
+            <h3><a href="money_one.html">世界 50 間最棒咖啡館，第一名在台灣！「Simple Kaffa」3 大亮點，值得你走一回。</a></h3>
+            <div class="note_txt">
+              <span class="date">2019-09-09</span>
+              <a href="#" class="author">Shopping Design</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 側欄 -->
+      <div class="item_side mix">
+        <!-- 熱門標籤 -->
+        <h2 class="item_title">熱門關鍵字</h2>
+        <div class="tag_list">
+          <a href="#">身分證</a>
+          <a href="#">銀行</a>
+          <a href="#">立即撥款</a>
+          <a href="#">小額借錢</a>
+          <a href="#">代償高利</a>
+          <a href="#">民間借貸</a>
+          <a href="#">當鋪</a>
+          <a href="#">日仔會</a>
+          <a href="#">互助會</a>
+          <a href="#">首期免息</a>
+          <a href="#">代書</a>
+          <a href="#">支客票</a>
+          <a href="#">土地</a>
+          <a href="#">二胎</a>
+          <a href="#">軍人</a>
+          <a href="#">公司票</a>
+          <a href="#">政府立案</a>
+          <a href="#">按月計息</a>
+        </div>
+        <div class="contact">
+          <p>歡迎專業人士投稿發表借貸知識與分享相關法律，增加借貸雙方的保障與安全。</p>
+          <a href="money123@moneymail.com?subject">money123@moneymail.com</a>
+        </div>
+        <!-- 趣味影音 3 則-->
+        <h2 class="item_title">趣味影音</h2>
+        <div class="article">
+          <a href="video_one.html">
+            <img src="img/video/3.jpg" alt="趣味影音">
+            <i class="fas fa-play-circle"></i>
+          </a>
+          <h3><a href="video_one.html">還在把錢放定存？別傻了，存股才是王道！他公布獨家選股秘訣，52歲不工作也能年領200萬</a></h3>
+          <div class="note_txt">
+            <span class="date">2020-06-22</span>
+            <a href="#" class="author">林安儒</a>
+          </div>
+        </div>
+        <div class="article">
+          <a href="video_one.html">
+            <img src="img/video/4.jpg" alt="趣味影音">
+            <i class="fas fa-play-circle"></i>
+          </a>
+          <h3><a href="video_one.html">還在把錢放定存？別傻了，存股才是王道！他公布獨家選股秘訣，52歲不工作也能年領200萬</a></h3>
+          <div class="note_txt">
+            <span class="date">2020-06-22</span>
+            <a href="#" class="author">林安儒</a>
+          </div>
+        </div>
+        <div class="article">
+          <a href="video_one.html">
+            <img src="img/video/2.jpg" alt="趣味影音">
+            <i class="fas fa-play-circle"></i>
+          </a>
+          <h3><a href="video_one.html">還在把錢放定存？別傻了，存股才是王道！他公布獨家選股秘訣，52歲不工作也能年領200萬</a></h3>
+          <div class="note_txt">
+            <span class="date">2020-06-22</span>
+            <a href="#" class="author">林安儒</a>
+          </div>
+        </div>
+        <div class="btn_pink">
+          <a href="video_fun.html">更多影音</a>
+        </div>
+        <!-- 新聞專區 -->
+        <div class="today_news">
+          <input type="radio" name="news" id="today" checked>
+          <input type="radio" name="news" id="business">
+          <input type="radio" name="news" id="life">
+          <div class="news_btn">
+            <label for="today">時事</label>
+            <label for="business">財經</label>
+            <label for="life">生活</label>
+          </div>
+          <div class="news_type">
+            <!-- 新聞 : 限放十則 -->
+            <div class="news_list news_today">
+              <div class="article">
+                <h3><a href="news_one.html"">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+              <div class="article">
+                <h3><a href="news_one.html">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+              <div class="article">
+                <h3><a href="news_one.html">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+              <div class="article">
+                <h3><a href="news_one.html">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+              <div class="article">
+                <h3><a href="news_one.html">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+              <div class="article">
+                <h3><a href="news_one.html">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+              <div class="article">
+                <h3><a href="news_one.html">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+              <div class="article">
+                <h3><a href="news_one.html">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+              <div class="article">
+                <h3><a href="news_one.html">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+              <div class="article">
+                <h3><a href="news_one.html">韓國瑜密友留任高輪董座，綠議員怒喊快換人，代理市長回應了。</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-20</span>
+                  <a href="#" class="author">陳煜</a>
+                </div>
+              </div>
+            </div>
+            <!-- 時事 : 限放十則 -->
+            <div class="news_list news_business">
+              <div class="article">
+                <h3><a href="news_one.html">要花多少學費學好做電商這檔事？做電商你真的準備好了嗎？</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-23</span>
+                  <a href="#" class="author">林克威</a>
+                </div>
+              </div>
+            </div>
+            <!-- 生活 : 限放十則 -->
+            <div class="news_list news_life">
+              <div class="article">
+                <h3><a href="news_one.html">端午爽吃鹼粽要小心！不肖業者若用硼砂提高保存效果，吃多會不孕甚至腎衰竭！</a></h3>
+                <div class="note_txt">
+                  <span class="date">2020-06-22</span>
+                  <a href="#" class="author">Hello醫師</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_pink">
+            <a href="today_news.html">更多新聞</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="group_items">
+      <!-- 下方左欄位 > 借貸廣告區 限 6 則-->
+      <div class="item_main ads">
+        <h2 class="item_title">借錢管道</h2>
+        <a href="ad_one.html" class="ad_one" target="_blank" rel="noopener noreferrer">
+          <img src="img/ad/4.jpg" alt="塑膠袋借錢管道">
+          <h3>學生軍人鈔低利借貸 | 低利息低月付</h3>
+        </a>
+        <a href="ad_one.html" class="ad_one" target="_blank" rel="noopener noreferrer">
+          <img src="img/ad/1.jpg" alt="塑膠袋借錢管道">
+          <h3>學生軍人鈔低利借貸 | 低利息低月付</h3>
+        </a>
+        <a href="ad_one.html" class="ad_one" target="_blank" rel="noopener noreferrer">
+          <img src="img/ad/2.jpg" alt="塑膠袋借錢管道">
+          <h3>學生軍人鈔低利借貸 | 低利息低月付</h3>
+        </a>
+        <a href="ad_one.html" class="ad_one" target="_blank" rel="noopener noreferrer">
+          <img src="img/ad/4.jpg" alt="塑膠袋借錢管道">
+          <h3>學生軍人鈔低利借貸 | 低利息低月付</h3>
+        </a>
+        <a href="ad_one.html" class="ad_one" target="_blank" rel="noopener noreferrer">
+          <img src="img/ad/4.jpg" alt="塑膠袋借錢管道">
+          <h3>學生軍人鈔低利借貸 | 低利息低月付</h3>
+        </a>
+        <a href="ad_one.html" class="ad_one" target="_blank" rel="noopener noreferrer">
+          <img src="img/ad/1.jpg" alt="塑膠袋借錢管道">
+          <h3>學生軍人鈔低利借貸 | 低利息低月付</h3>
+        </a>
+      </div>
+      <!-- 下方右欄位 > 借貸嘗試 限 2 則-->
+      <div class="item_side">
+        <h2 class="item_title">借錢常識</h2>
+        <div class="article">
+          <a href="money_one.html"><img src="img/freelancer/2.jpg" alt="專業文章"></a>
+          <h3><a href="money_one.html">還在把錢放定存？別傻了，存股才是王道！他公布獨家選股秘訣，52歲不工作也能年領200萬</a></h3>
+          <div class="note_txt">
+            <span class="date">2020-06-22</span>
+            <a href="#" class="author">林安儒</a>
+          </div>
+        </div>
+        <div class="article">
+          <a href="money_one.html"><img src="img/freelancer/2.jpg" alt="專業文章"></a>
+          <h3><a href="money_one.html">還在把錢放定存？別傻了，存股才是王道！他公布獨家選股秘訣，52歲不工作也能年領200萬</a></h3>
+          <div class="note_txt">
+            <span class="date">2020-06-22</span>
+            <a href="#" class="author">林安儒</a>
+          </div>
+        </div>
+        <div class="btn_pink">
+          <a href="money_news.html">更多文章</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 頁面底部設定 -->
+  <footer class="footer">
+    <div class="title"><a href="index.html" class="logo">速交貸</a></div>
+    <div class="link_list">
+      <div class="link_box">
+        <h4>關於我們</h4>
+        <ul>
+          <li><a href="about.html">本站介紹</a></li>
+          <li><a href="note.html">注意事項</a></li>
+          <li><a href="show_ad.html">廣告刊登</a></li>
+          <li><a href="service.html">客服資訊</a></li>
+        </ul>
+      </div>
+      <div class="link_box">
+        <h4>借貸管道</h4>
+        <ul>
+          <li><a href="ad_all.html">北北基</a></li>
+          <li><a href="ad_all.html">桃竹苗</a></li>
+          <li><a href="ad_all.html">中彰投</a></li>
+          <li><a href="ad_all.html">雲嘉南</a></li>
+          <li><a href="ad_all.html">高屏</a></li>
+          <li><a href="ad_all.html">宜花東</a></li>
+          <li><a href="ad_all.html">離島</a></li>
+        </ul>
+      </div>
+      <div class="link_box">
+        <h4>資訊分享</h4>
+        <ul>
+          <li><a href="today_news.html">新聞總覽</a></li>
+          <li><a href="money_news.html">借錢常識</a></li>
+          <li><a href="video_fun.html">趣味影音</a></li>
+          <li><a href="service.html">我要投稿</a></li>
+        </ul>
+      </div>
+      <div class="link_box">
+        <h4>更多社群</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-line"></i>台灣第一借錢</a></li>
+          <li><a href="#"><i class="fab fa-line"></i>速交貸</a></li>
+          <li><a href="#"><i class="fab fa-line"></i>借錢借款</a></li>
+          <li><a href="#"><i class="fab fa-line"></i>即樂貸</a></li>
+          <li><a href="#"><i class="fab fa-facebook-square"></i>台灣第一借錢</a></li>
+          <li><a href="#"><i class="fab fa-facebook-square"></i>速交貸</a></li>
+          <li><a href="#"><i class="fab fa-facebook-square"></i>借錢借款</a></li>
+          <li><a href="#"><i class="fab fa-facebook-square"></i>即樂貸</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p>全台最多、最快、最安全的金融資訊　全在速交貸</p>
+      <p>地址：台中市西屯區國安一路121號</p>
+      <p>e-mail：money123@moneymail.com</p>
+      <p class="copyright">Copyright© 2020 速交貸 未經授權 嚴禁轉載</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
