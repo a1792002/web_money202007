@@ -374,6 +374,9 @@ body {
   margin-bottom: 10px;
   text-align: right;
 }
+.margin_left20 {
+  margin-left: 20px;
+}
 .btn_pink a {
   font-size: 16px;
   font-weight: 300;
