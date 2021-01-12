@@ -978,6 +978,12 @@ body {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+.link_box img {
+  width: 18px;
+  height: 18px;
+  background-size: 100% auto;
+  margin: 3px 6px 3px 0;
+}
 .footer .link_list h4 {
   padding-left: 12px;
   margin-bottom: 6px;
